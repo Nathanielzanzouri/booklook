@@ -2,3 +2,31 @@
 	margin-bottom: 10px;
 	padding-right: 200px;
 }
+
+body {
+	background-image: url("http://www.siwallpaperhd.com/wp-content/uploads/2015/08/cloud_sunset_wallpaper.jpg");
+}
+
+.Forecast {
+	color: white;
+    font-family: Georgia;
+    font-size: 40px;
+
+}
+
+.Info-form {
+	color: grey;
+    font-family: Georgia;
+    font-size: 40px;
+}
+
+h1 {
+	color: white;
+    font-family: Georgia;
+    font-size: 40px;
+}
+
+.btnbtn-primarysearch {
+	color:green;
+}
+      

@@ -13,47 +13,22 @@
  <div class="row">
     <div class="col-md-6 col-md-offset-3">
       <div class="page-header">
-        <h1>BookLook <i class="fa fa-eye" aria-hidden="true"></i> <i class="fa fa-book" aria-hidden="true"></i></h1>
+        <h1>Weather + <i class="fa fa-bolt" aria-hidden="true"></i> <i class="fa fa-sun-o" aria-hidden="true"></i> </i></h1>
       </div>
 
-      <div class="Infos">
+      <div class="Forecast" >
 
       </div>
 
       <form class="Info-form">
-        <h2>Enter Book Info</h2>
+        <h2>Enter City Name</h2>
 
-        <div class="Book-Info">
-          <input type="text" id="informations" class="Info-form" placeholder="Book Title">
+        <div class="Weather-Info">
+          <input type="text" id="city" class="title Info-form" placeholder="City Name">
           </input>
         </div>
 
-        <div class="Book-Info">
-          <input type="text" id="informations" class="Info-form" placeholder="Book Author">
-          </input>
-        </div>
-
-        <div class="Book-Info">
-          <input type="text" id="informations" class="Info-form" placeholder="Book Description">
-          </input>
-        </div>
-
-        <div class="Book-Info">
-          <input type="text" id="informations" class="Info-form" placeholder="Book URL">
-          </input>
-        </div>
-
-        <div class="Book-Info">
-          <input type="text" id="informations" class="Info-form" placeholder="Number of Pages">
-          </input>
-        </div>
-
-        <div class="Book-Info">
-          <input type="text" id="informations" class="Info-form" placeholder="Minutes You Read Per Day">
-          </input>
-        </div>
-
-        <button class="btn btn-primary search">Search</button>
+        <button class="btn btn-primary search" id="search">Search</button>
 
       </form>
 
@@ -61,6 +36,22 @@
   </div>
 
 <script src="node_modules/jquery/dist/jquery.min.js"> </script>
+<script type="text/javascript" src="node_modules/handlebars/dist/handlebars.js"></script>
+ <script id="weather-template" type="text/x-handlebars-template">
+    <div>
+      <p>{{country}} / {{name}}</p>
+      <p>{{description}}</p>
+      <p>{{temp}}</p>
+
+      <div class="comment">
+          <input type="text" id="comment" class="title comment-form" placeholder="Write a comment">
+          </input>
+        </div> 
+
+      <button class="btn btn-primary comment" id="comment" style="background-color:green;">Comment</button1>
+    </div>
+
+</script>
  <script type="text/javascript" src="script.js"></script>
 
 </body>
